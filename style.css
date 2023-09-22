@@ -1,0 +1,149 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header{
+    background-color: #e27d60;
+    
+}
+
+
+.main{
+    background-color: #41b3a3;
+    grid-row: 2;
+    
+}
+
+.book{
+    /* This will be for a card, that the js will add to */
+    background-color: #c38d9e;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+
+
+.newbook-btn {
+    background-color: #3498db; /* Base color - you can change this to suit your design */
+    border: none; 
+    color: white; /* Text color */
+    padding: 12px 20px; /* Padding to give the button size */
+    text-align: center; 
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; 
+    transition-duration: 0.4s; /* Transition effect */
+    cursor: pointer; /* Hand cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+}
+
+.newbook-btn:hover {
+    background-color: #45a049; /* Color when the button is hovered */
+    color: white; /* Text color when the button is hovered */
+}
+
+.newbook-btn:active {
+    background-color: #2e6da4; /* Color when the button is clicked */
+    color: white; /* Text color when the button is clicked */
+    box-shadow: 0 5px #0b3d91; /* Shadow effect on click */
+    transform: translateY(4px); /* Slight downward movement on click */
+}
+
+/* Basic modal styling */
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-wrapper {
+    width: 400px;
+    background-color: #f7f7f7;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+input[type="text"], 
+input[type="number"] {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.2s ease;
+    outline: none;
+    width: 100%;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus {
+    border-color: #007BFF;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    outline: none;
+}
+
+button[value="cancel"] {
+    background-color: #ccc;
+    color: #333;
+    margin-right: auto;
+}
+
+.newbook-submit {
+    background-color: #007BFF;
+    color: #fff;
+    margin-left: auto;
+}
+
+button[value="cancel"]:hover {
+    background-color: #aaa;
+}
+
+.newbook-submit:hover {
+    background-color: #0056b3;
+}
